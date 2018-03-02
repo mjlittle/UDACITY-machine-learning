@@ -33,7 +33,8 @@ from sklearn.naive_bayes import GaussianNB
 +features = np.array([features_train],[features_test])
 +clf.fit(features_train, labels_train)
 +pred = clf.predict(features_test)
-+print accuracy_score(pred, labels_test)   
++print accuracy_score(pred, labels_test) 
++submitAccuracy(pred, labels_test) 
 
 #########################################################
 
